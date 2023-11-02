@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapis do newslettera</title>
+    <script src="js/indexNr4.js"></script>
+</head>
+
+<body style="background-color:  #ab9c5296;">
+    <h2>Formularz zapisu do newslettera.</h2>
+    <h3>Dane zapisane w Local Storage</h3>
+    <form>
+        <table style="background-color: rgb(231, 180, 133)">
+            <tr>
+                <td>Imię:*</td>
+                <td><input id="imie" placeholder="np. Eryk" type="text" required></td>
+            </tr>
+            <tr>
+                <td>Email:*</td>
+                <td><input id="email" placeholder="np. d@gmail.com" type="email" required></td>
+            </tr>
+            <tr>
+                <td>Miasto:*</td>
+                <td><input id="miasto" placeholder="np. Lublin" type="text" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center"><br>
+                    <button type="submit" onclick="zapis()">Zapisz dane</button>
+                    <button type="button" onclick="pokaz()">Wyświetl dane</button>
+                    <button type="reset" onclick="usun()">Usuń wszystkich zapisanych</button>
+                </td>
+            </tr>
+        </table>
+        <div id="dane"></div> 
+    </form>
+
+</body>
+
+</html>
